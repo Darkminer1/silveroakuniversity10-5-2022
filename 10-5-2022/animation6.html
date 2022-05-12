@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+            Animation 6
+        </title>
+		<style type="text/css">
+				.fullscreen_bg 
+				{
+					position:fixed;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					overflow:hidden;
+					z-index:-1;
+					background-size:cover;
+				}
+
+				.fullscreen_bg_video 
+				{
+					position:fixed;
+					width: auto;
+					height: auto;
+					min-width: 100%;
+					min-height: 100%;
+				}
+				h2{background-color:#109843;color:#ffffff; animation: effect 15s infinite;}
+                @keyframes effect {
+                    25%{background-color: #51ADFC;}
+				    50%{background-color: #D45835;}
+				    75%{background-color: #278534;}
+				    100%{background-color: #554F9F;}
+                }
+		</style>
+    </head>
+    <body>
+        
+		<div class="fullscreen_bg">
+            <video src="./sample.mov" autoplay loop muted class="fullscreen_bg_video" style="width: 720px;"></video>
+        </div>
+		
+		<h2>Show my screen in video</h2>
+    </body>
+</html>

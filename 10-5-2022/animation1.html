@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>
+			Animation 1	
+		</title>
+		<style type="text/css"> 
+			body
+			{
+              background-color: orange;
+			  animation: effect 10s infinite;
+			  position: relative;
+			}
+			
+			div 
+            {
+			  width: 200px;
+			  height: 200px;
+			  background-color: green;
+			  position:relative;
+			  animation-name:animation;
+			  animation-duration:10s;
+			  animation-iteration-count:infinite;
+			 }
+	
+			@keyframes animation{
+				0%{background-color:#474B4E; left:0px; top:0px;transform:rotate(0deg);}
+				25%{background-color:#58442A; left:200px; top:0px;transform:rotate(90deg);}
+				50%{background-color:#13E244; left:200px; top:200px;transform:rotate(180deg);}
+				75%{background-color:#096CBB; left:0px; top:200px;transform:rotate(270deg);}
+				100%{background-color:#AE8E23; left:0px; top:0px;transform:rotate(360deg);}
+			}
+			@keyframes effect {
+				25%{background-color: #51ADFC;}
+				50%{background-color: #D45835;}
+				75%{background-color: #278534;}
+				100%{background-color: #554F9F;}
+
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
